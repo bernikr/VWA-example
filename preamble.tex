@@ -1,0 +1,67 @@
+\newcommand{\linkref}[2]{\hyperref[#2]{#1~\ref*{#2}}}
+\newcommand{\qvlink}{\hyperref[quellenverzeichnis]}
+\newcommand{\avlink}{\hyperref[abbildungsverzeichnis]}
+
+\usepackage{arabtex}
+\usepackage{alphalph}
+\usepackage{refcount}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{stmaryrd}
+\usepackage{wasysym}
+\usepackage{ae,aecompl}
+\usepackage{mathtools}
+\usepackage{tikz-cd}
+\usepackage{soul}
+
+
+\newcommand{\familie}{\mathbb}
+
+\newtheorem{definition}{Definition}
+\newtheorem{satz}[definition]{Satz}
+\newtheorem{lemma}[definition]{Lemma}
+
+\newcommand{\deflabel}[2]{\textup{(Def.~\ref{#1}\alphalph{\getrefnumber{#2}})}}
+
+\newcommand{\defref}[2]{\hyperref[#2]{\textup{(Def.~\ref{#1}\alphalph{\getrefnumber{#2}})}}}
+
+\newcommand{\defeq}{\vcentcolon=}
+\newcommand{\eqdef}{=\vcentcolon}
+\newcommand{\astprime}{^{\ast}}
+\newcommand{\drang}{rang\astprime}
+\newcommand{\sm}{\mathrm{\scalebox{0.5}[1.0]{$-$}}}
+
+\newcommand{\fmaleph}{\smash{\mathfrak{F}^{\sm 1}_\aleph}}
+\newcommand{\fmbeth}{\smash{\mathfrak{F}^{\sm 1}_\beth}}
+\newcommand{\fmdaleth}{\smash{\mathfrak{F}^{\sm 1}_\daleth}}
+
+\newcommand{\cprec}{\preccurlyeq}
+\newcommand{\cprecneq}{\prec}
+\newcommand{\cprecdot}{\mathrel{\prec\!\!\! \cdot}}
+% \newcommand{\cprecperp}{\perp}
+\newcommand{\cprecperp}{\mathrel{\mathrm{\scalebox{0.8}[1.0]{$\prec \hspace{-0.2em} \succ$}}}}
+\newcommand{\aprec}{\trianglelefteqslant}
+\newcommand{\aprecneq}{\vartriangleleft}
+\newcommand{\aprecdot}{\mathrel{\vartriangleleft\hspace{-0.7em} \cdot \,}}
+\newcommand{\aprecperp}{\mathrel{\mathrm{\scalebox{0.8}[1.0]{$< \hspace{-0.2em} >$}}}}
+
+\newcommand{\denom}{\emph}
+
+\newcommand{\equalign}[1]{&\mathrm{\makebox[2em]{$#1$}}}
+\newcommand{\eqtext}{&&\text}
+\newcommand{\eqpfeil}[1]{\mathrm{\makebox[3em][l]{$#1$}}&&}
+\newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
+
+\newcommand{\hash}{\#}
+
+
+
+\let\emptyset\varnothing
+\newcommand{\identity}{\textnormal{id}}
+
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist
+
+\binoppenalty=900
+\relpenalty=700

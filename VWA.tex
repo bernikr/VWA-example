@@ -1,0 +1,31 @@
+\documentclass[a4paper,11pt]{report}
+\input{VWA-core/vwa}
+\input{VWA-core/citestyle/skp}
+\input{VWA-core/title/skp}
+
+\addbibresource{quellen.bib}
+
+\setTitle{Lorem ipsum dolor sit amet consetetur sadipscing elitr}
+\setAuthor{Max Mustermann}
+\setClass{8D}{2015/16}
+\setTeacher{Mag. Lehrer}
+\setDate{1}{1}{2016}
+\setEmail{author@example.com}
+
+\begin{document}
+\skptitle
+
+\input{content/abstract}
+
+\tableofcontents
+
+\newpage
+
+\input{content/content}
+
+\appendix
+
+\skpciteprintlit
+\skpciteprintfig
+
+\end{document}

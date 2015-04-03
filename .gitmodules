@@ -1,0 +1,3 @@
+[submodule "VWA-core"]
+	path = VWA-core
+	url = https://github.com/bernikr/VWA-core
